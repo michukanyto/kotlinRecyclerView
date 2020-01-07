@@ -14,7 +14,6 @@ class UsersAdapter(val users: ArrayList<String>) : RecyclerView.Adapter<UsersAda
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsersAdapter.ViewHolder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.user_row,parent,false)
         return ViewHolder(view)
     }
@@ -23,7 +22,6 @@ class UsersAdapter(val users: ArrayList<String>) : RecyclerView.Adapter<UsersAda
 
 
     override fun onBindViewHolder(holder: UsersAdapter.ViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         holder.firstName.text = users[position]
     }
 }
